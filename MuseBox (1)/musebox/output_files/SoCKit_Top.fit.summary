@@ -1,0 +1,19 @@
+Fitter Status : Successful - Wed May 14 20:45:04 2014
+Quartus II 64-Bit Version : 13.1.1 Build 166 11/26/2013 SJ Full Version
+Revision Name : SoCKit_Top
+Top-level Entity Name : SoCKit_top
+Family : Cyclone V
+Device : 5CSXFC6D6F31C8ES
+Timing Models : Preliminary
+Logic utilization (in ALMs) : 10,068 / 41,910 ( 24 % )
+Total registers : 26383
+Total pins : 289 / 499 ( 58 % )
+Total virtual pins : 0
+Total block memory bits : 262,656 / 5,662,720 ( 5 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI TX Channels : 0 / 9 ( 0 % )
+Total PLLs : 1 / 15 ( 7 % )
+Total DLLs : 1 / 4 ( 25 % )

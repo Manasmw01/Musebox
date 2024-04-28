@@ -1,0 +1,6 @@
+*.pdf
+qsys*
+db
+incremental_db
+hps_isw_handoff
+*~

@@ -1,0 +1,130 @@
+# do SoCKit_Top_run_msim_rtl_vhdl.do 
+# if ![file isdirectory SoCKit_Top_iputf_libs] {
+# 	file mkdir SoCKit_Top_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera/quartus-13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/quartus-13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "/home/user4/spring14/ma2799/4840/musebox/audio_clk/clock_pll_sim/clock_pll.vo"
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_pll
+# 
+# Top level modules:
+# 	clock_pll
+# 
+# vlog -vlog01compat -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/FFT_module {/home/user4/spring14/ma2799/4840/musebox/FFT_module/fft_module.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fft_module
+# 
+# Top level modules:
+# 	fft_module
+# vlog -vlog01compat -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/FFT_module {/home/user4/spring14/ma2799/4840/musebox/FFT_module/fft_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fft_module
+# 
+# Top level modules:
+# 	fft_module
+# vlog -vlog01compat -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/output_files {/home/user4/spring14/ma2799/4840/musebox/output_files/dc_fifo_sm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dc_fifo_sm
+# 
+# Top level modules:
+# 	dc_fifo_sm
+# vlog -vlog01compat -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/dcfifo {/home/user4/spring14/ma2799/4840/musebox/dcfifo/dc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dc_fifo
+# 
+# Top level modules:
+# 	dc_fifo
+# vlog -vlog01compat -work work +incdir+/home/user4/spring14/ma2799/4840/musebox {/home/user4/spring14/ma2799/4840/musebox/SoCKit_top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SoCKit_top
+# ** Warning: /home/user4/spring14/ma2799/4840/musebox/SoCKit_top.v(577): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	SoCKit_top
+# vlog -vlog01compat -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/signal_type {/home/user4/spring14/ma2799/4840/musebox/signal_type/signal_tap.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module signal_tap
+# 
+# Top level modules:
+# 	signal_tap
+# vlog -sv -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/audio {/home/user4/spring14/ma2799/4840/musebox/audio/i2c_controller.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module i2c_controller
+# 
+# Top level modules:
+# 	i2c_controller
+# vlog -sv -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/audio {/home/user4/spring14/ma2799/4840/musebox/audio/i2c_av_config.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module i2c_av_config
+# 
+# Top level modules:
+# 	i2c_av_config
+# vlog -sv -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/audio {/home/user4/spring14/ma2799/4840/musebox/audio/audio_codec.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_codec
+# 
+# Top level modules:
+# 	audio_codec
+# vlog -sv -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/aud-to-fft {/home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package aud_to_fft_sv_unit
+# -- Compiling module add_signed
+# -- Compiling module audio_to_fft
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(144): (vlog-2110) Illegal reference to net "wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(146): (vlog-2110) Illegal reference to net "wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(191): (vlog-2110) Illegal reference to net "audio_output".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(193): (vlog-2110) Illegal reference to net "fifo_out_rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(195): (vlog-2110) Illegal reference to net "audio_output".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(196): (vlog-2110) Illegal reference to net "fifo_out_rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(206): (vlog-2110) Illegal reference to net "fifo_out_wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(210): (vlog-2110) Illegal reference to net "fifo_out_wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(212): (vlog-2110) Illegal reference to net "fifo_out_wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(215): (vlog-2110) Illegal reference to net "fifo_out_wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(236): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(238): (vlog-2110) Illegal reference to net "fft_in_sivalid".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(240): (vlog-2110) Illegal reference to net "fft_in_sisop".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(245): (vlog-2110) Illegal reference to net "fft_in_sivalid".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(247): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(249): (vlog-2110) Illegal reference to net "fft_in_sisop".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(253): (vlog-2110) Illegal reference to net "fft_in_sieop".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(255): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(257): (vlog-2110) Illegal reference to net "fft_in_sivalid".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(261): (vlog-2110) Illegal reference to net "fft_in_sieop".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(262): (vlog-2110) Illegal reference to net "fft_in_sivalid".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(263): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(268): (vlog-2110) Illegal reference to net "fft_in_sivalid".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(270): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(275): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(278): (vlog-2110) Illegal reference to net "fft_in_sivalid".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(279): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(280): (vlog-2110) Illegal reference to net "vga_dowrite".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(281): (vlog-2110) Illegal reference to net "vga_select".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(297): (vlog-2110) Illegal reference to net "wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(298): (vlog-2110) Illegal reference to net "rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(299): (vlog-2110) Illegal reference to net "fifo_out_wrreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(300): (vlog-2110) Illegal reference to net "fifo_out_rdreq".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(301): (vlog-2110) Illegal reference to net "fft_in_sivalid".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(302): (vlog-2110) Illegal reference to net "fft_in_sisop".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(303): (vlog-2110) Illegal reference to net "fft_in_sieop".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(304): (vlog-2110) Illegal reference to net "fifo_in_aclr".
+# ** Error: /home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv(305): (vlog-2110) Illegal reference to net "fifo_out_aclr".
+# ** Error: /opt/altera/quartus-13.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./SoCKit_Top_run_msim_rtl_vhdl.do line 28
+# /opt/altera/quartus-13.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+/home/user4/spring14/ma2799/4840/musebox/aud-to-fft {/home/user4/spring14/ma2799/4840/musebox/aud-to-fft/aud_to_fft.sv}"

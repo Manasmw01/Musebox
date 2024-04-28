@@ -1,0 +1,26 @@
+set_global_assignment -entity "fir_equalizer" -library "fir_equalizer" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "fir_equalizer" -library "fir_equalizer" -name IP_TOOL_VERSION "13.1.1"
+set_global_assignment -entity "fir_equalizer" -library "fir_equalizer" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "fir_equalizer" -name MISC_FILE [file join $::quartus(qip_path) "fir_equalizer.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+
+set_global_assignment -library "fir_equalizer" -name VERILOG_FILE [file join $::quartus(qip_path) "fir_equalizer.v"]
+set_global_assignment -library "fir_equalizer" -name VERILOG_FILE [file join $::quartus(qip_path) "fir_equalizer/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/dspba_library_package.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/dspba_library.vhd"]
+set_global_assignment -library "fir_equalizer" -name SOURCE_FILE [file join $::quartus(qip_path) "fir_equalizer/fir_equalizer_0002_rtl_rm.hex"]
+set_global_assignment -library "fir_equalizer" -name SOURCE_FILE [file join $::quartus(qip_path) "fir_equalizer/fir_equalizer_0002_rtl_u0_m0_wo0_cm0.hex"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/fir_equalizer_0002_rtl.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/fir_equalizer_0002_ast.vhd"]
+set_global_assignment -library "fir_equalizer" -name VHDL_FILE [file join $::quartus(qip_path) "fir_equalizer/fir_equalizer_0002.vhd"]
+set_global_assignment -library "fir_equalizer" -name SDC_FILE [file join $::quartus(qip_path) "fir_equalizer/fir_equalizer_0002.sdc"]
+
+set_global_assignment -entity "fir_equalizer_0002" -library "fir_equalizer" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "fir_equalizer_0002" -library "fir_equalizer" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "fir_equalizer_0002" -library "fir_equalizer" -name IP_TOOL_ENV "mwpim"

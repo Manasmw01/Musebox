@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Wed May 14 20:38:58 2014
+Quartus II 64-Bit Version : 13.1.1 Build 166 11/26/2013 SJ Full Version
+Revision Name : SoCKit_Top
+Top-level Entity Name : SoCKit_top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 26078
+Total pins : 289
+Total virtual pins : 0
+Total block memory bits : 262,656
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI TX Channels : 0
+Total PLLs : 1
+Total DLLs : 1

@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed May 14 20:38:42 2014
+Quartus II 64-Bit Version : 13.1.1 Build 166 11/26/2013 SJ Full Version
+Revision Name : SoCKit_Top
+Top-level Entity Name : SoCKit_top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+Total DSP Blocks : N/A until Partition Merge
+Total HSSI RX PCSs : N/A until Partition Merge
+Total HSSI PMA RX Deserializers : N/A until Partition Merge
+Total HSSI TX PCSs : N/A until Partition Merge
+Total HSSI TX Channels : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge
